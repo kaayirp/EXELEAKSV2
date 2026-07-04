@@ -1,0 +1,14 @@
+{
+  "name": "soulexe",
+  "private": true,
+  "version": "1.0.0",
+  "description": "SoulEXE monorepo — root package.json exists only so Railway/Nixpacks detects Node.js at the repo root and deploys the whole repo (client + server), not just server/.",
+  "scripts": {
+    "postinstall": "cd server && npm install",
+    "start": "cd server && npm start",
+    "seed": "cd server && npm run seed"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
